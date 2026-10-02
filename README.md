@@ -19,3 +19,5 @@ The goal of this project is to collect thousands of book reviews and ratings, tr
 * Ratings are not a direct measure of objective quality[cite: 1].
 * Popular books attract disproportionately more reviews, and people who strongly love or hate a book review it more frequently than neutral readers[cite: 1].
 * Review sentiment is heavily influenced by hype and reader expectations[cite: 1].
+
+<!-- C:\venvs\book-nlp\Scripts\Activate.ps1 -->
