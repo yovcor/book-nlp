@@ -20,4 +20,20 @@ The goal of this project is to collect thousands of book reviews and ratings, tr
 * Popular books attract disproportionately more reviews, and people who strongly love or hate a book review it more frequently than neutral readers[cite: 1].
 * Review sentiment is heavily influenced by hype and reader expectations[cite: 1].
 
+## Results (run on 2026-08-10)
+
+Data: 79,788 English Amazon book reviews (random 3% sample), 3-star reviews
+removed. Binary label: positive = 4-5 stars (86.8%), negative = 1-2 stars (13.2%).
+Split: 63,830 train / 15,958 test, stratified, random_state=42.
+
+| Features | Model | Accuracy | Macro-F1 |
+|---|---|---|---|
+| (none) | Always predict positive | 0.8677 | 0.4646 |
+| TF-IDF | Naive Bayes | 0.8781 | 0.5397 |
+| TF-IDF | Complement Naive Bayes | 0.9164 | 0.7963 |
+| TF-IDF | Logistic regression (balanced) | 0.9004 | 0.8126 |
+| Word2Vec (averaged) | Logistic regression (balanced) | 0.8213 | 0.7195 |
+
+Macro-F1 is the headline metric because the classes are imbalanced.
+
 <!-- C:\venvs\book-nlp\Scripts\Activate.ps1 -->
