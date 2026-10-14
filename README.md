@@ -33,6 +33,7 @@ Split: 63,830 train / 15,958 test, stratified, random_state=42.
 | TF-IDF | Complement Naive Bayes | 0.9164 | 0.7963 |
 | TF-IDF | Logistic regression (balanced) | 0.9004 | 0.8126 |
 | Word2Vec (averaged) | Logistic regression (balanced) | 0.8213 | 0.7195 |
+| MiniLM sentence embeddings | Logistic regression (balanced) | 0.8252 | 0.7230 |
 
 Macro-F1 is the headline metric because the classes are imbalanced.
 
