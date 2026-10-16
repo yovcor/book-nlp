@@ -71,6 +71,9 @@ All models are evaluated on the same 15,958 test reviews.
 - **Words the logistic regression linked to negative reviews:** boring, disappointed, waste,
   not recommend, not worth, dull. **To positive reviews:** great, excellent, wonderful, love,
   highly recommend, not disappoint, fascinating, powerful.
+- **Per-book aspect summaries (5 books, up to 1,500 deduplicated reviews each):** Atlas Shrugged
+  characters 49% and writing 54% positive, Pride and Prejudice characters 83% and plot 81%,
+  The Giver ending 41% (369 sentences). These match how the books are commonly discussed.
 
 ## Limitations
 
@@ -83,6 +86,17 @@ All models are evaluated on the same 15,958 test reviews.
   loss rose in epoch 2, a sign of mild overfitting. The test set was also used for
   per-epoch evaluation, though no model selection was done with it.
 - Promotional or fake reviews were not filtered out.
+- The raw dataset repeats the same review under many edition IDs (for five popular books,
+  82% of rows were exact duplicates). Duplicates were removed before splitting, so train and
+  test do not share reviews, but the random sample was taken before deduplication, which favors
+  heavily duplicated (mostly popular) books.
+- Aspects are found by keyword matching and scored with a binary movie-review sentiment model.
+  In a manual check of 12 sentences, about half were wrongly tagged or scored (for example,
+  "character" used for moral character, or negative words from the plot being described).
+  Treat aspect percentages as approximate and compare books against each other rather than
+  reading them literally.
+- The aspect keywords assume fiction. For a nonfiction book (Mere Christianity), only
+  "writing" had enough sentences to report.
 
 ## Project structure
 

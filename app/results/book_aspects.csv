@@ -1,0 +1,31 @@
+title,aspect,pct_positive,n_sentences
+Atlas Shrugged,characters,49.0,812
+Atlas Shrugged,emotion,67.0,57
+Atlas Shrugged,ending,41.0,27
+Atlas Shrugged,pacing,43.0,53
+Atlas Shrugged,plot,64.0,842
+Atlas Shrugged,writing,54.0,389
+Mere Christianity,characters,81.0,16
+Mere Christianity,emotion,25.0,12
+Mere Christianity,ending,50.0,2
+Mere Christianity,pacing,88.0,8
+Mere Christianity,plot,67.0,24
+Mere Christianity,writing,81.0,238
+Pride and Prejudice,characters,83.0,1003
+Pride and Prejudice,emotion,77.0,56
+Pride and Prejudice,ending,76.0,49
+Pride and Prejudice,pacing,50.0,68
+Pride and Prejudice,plot,81.0,936
+Pride and Prejudice,writing,76.0,323
+The Giver,characters,77.0,328
+The Giver,emotion,70.0,169
+The Giver,ending,41.0,369
+The Giver,pacing,45.0,58
+The Giver,plot,73.0,746
+The Giver,writing,80.0,199
+Wuthering Heights,characters,56.0,955
+Wuthering Heights,emotion,79.0,140
+Wuthering Heights,ending,54.0,79
+Wuthering Heights,pacing,51.0,53
+Wuthering Heights,plot,67.0,1042
+Wuthering Heights,writing,68.0,305
